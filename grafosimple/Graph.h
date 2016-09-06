@@ -160,16 +160,18 @@ void Graph<N,E>::breadth_first_search(N a,N b) {
                 cout<<u->edges_[i]->nodes_[1]->data_<<'\t';
                 if(u->edges_[i]->nodes_[1]->data_ == y->data_ ) {
                     cout<<endl;
-                    cout<<"node founded"<<endl;
+                    cout<<"node founded"<<" d: "<<u->d + 2<<endl;
                     return;
                 }
                 u->edges_[i]->nodes_[1]->color = 1; // gray
                 u->edges_[i]->nodes_[1]->d = (u->d)+1;
+
                 u->edges_[i]->nodes_[1]->pi = u->data_;
                 q.push_back(u->edges_[i]->nodes_[1]);
             }
         }
         cout<<endl;
+        cout << q.size()<<endl;
         u->color = 2; // black
     }
 }

@@ -20,11 +20,11 @@ int main()
   ngraph.dir_ =0;
 
   ngraph.insert_edge('a','b',1);
-  ngraph.insert_edge('a','e',20);
+  //ngraph.insert_edge('a','e',20);
   ngraph.insert_edge('a','c',3);
-  ngraph.insert_edge('c','b',4);
   ngraph.insert_edge('c','e',9);
   ngraph.insert_edge('b','d',6);
+  ngraph.insert_edge('c','b',4);
   ngraph.insert_edge('d','c',1);
   ngraph.insert_edge('d','e',3);
   ngraph.insert_edge('f','a',1);

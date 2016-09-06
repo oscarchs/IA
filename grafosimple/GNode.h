@@ -39,6 +39,7 @@ template <class GraphTypes>
 GNode<GraphTypes>::GNode(N n){
   this->data_ = n;
   this->label.first = 0;
+  this->d = 0;
 }
 
 
